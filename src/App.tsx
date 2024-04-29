@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const [count, setCount] = useState(0)
 
   function toggle () {
     setIsOpen(open => !open)
@@ -21,7 +22,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Reactwdqw
+
         </a>
       </header>
     </div>

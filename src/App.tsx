@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   const [count, setCount] = useState(0)
+
+  function toggle () {
+    setIsOpen(open => !open)
+  }
   return (
     <div className="App">
       <header className="App-header">
